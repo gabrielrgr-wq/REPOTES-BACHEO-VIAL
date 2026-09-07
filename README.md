@@ -1,31 +1,39 @@
-# Informes de Bacheo UE1 – Canelones (2026)
+# Informe de Bacheo UE-1 — Agosto 2026
 
-Este repositorio contiene la estructura modular para la publicación periódica y mensual de los informes de bacheo y obras viales de la **Unidad Operativa 1 (UE1)** en Canelones, Uruguay.
+## Descripción
+Informe de cierre mensual de obra de bacheo para la Unidad Ejecutora 1 (UE-1), correspondiente al mes de agosto de 2026.
 
-## 📂 Estructura del Repositorio
+## Fuente de datos
+Planilla de obra GRINOR — UE-1, período Enero a Agosto 2026.
 
-```text
-.
-├── index.html                           # Portal principal de informes
-├── README.md                            # Documentación y guía de aportes
-└── informes/
-    └── 2026_Enero-Agosto/
-        ├── index.html                   # Reporte interactivo del periodo
-        └── img/                         # Recursos gráficos del periodo
-            ├── tendencia_mensual.png
-            ├── distribucion_localidad.png
-            └── top10_calles.png
+## Métricas principales
+
+| Indicador | Agosto 2026 | Acumulado Ene-Ago |
+|-----------|-------------|-------------------|
+| m² bacheados | 1.244,89 | 10.328,99 |
+| Toneladas de asfalto | 243,997 | 1.798,32 |
+| Baches completados | 22 | 235 |
+| Baches pendientes | 8 | — |
+| Calles intervenidas | 8 | — |
+| Localidades con obra | 1 (Las Piedras) | 2/4 |
+
+## Estado de ejecución
+- **Base + Asfalto (a certificar):** 734,65 m² (59%)
+- **Solo Base (para septiembre):** 510,24 m² (41%)
+
+## Estructura del repositorio
+```
+informe_bacheo_agosto_2026/
+├── index.html          # Informe visual completo
+├── datos/
+│   └── agosto_2026.csv # Datos crudos del mes
+└── README.md           # Este archivo
 ```
 
-## 📊 Histórico de Informes
+## Notas técnicas
+- 8 baches quedaron con base ejecutada y asfalto pendiente, programados para septiembre 2026.
+- No se registraron intervenciones en La Paz durante agosto.
+- La calle con mayor superficie intervenida fue Luis Braile (328,81 m²).
 
-| Periodo | M² Reparados | Cobertura | Estado | Enlace al Reporte |
-| :--- | :---: | :--- | :---: | :---: |
-| **Enero - Agosto 2026** | **10.219 m²** | Las Piedras (91%), La Paz (9%) | `Completado` | [Ver Informe](informes/2026_Enero-Agosto/index.html) |
-
-## 🚀 Cómo agregar un nuevo mes al repositorio
-
-1. Crear una carpeta dentro de `informes/` con el patrón `YYYY_Mes` (ej. `informes/2026_Septiembre/`).
-2. Colocar el archivo HTML renombrado a `index.html` y sus imágenes dentro de la subcarpeta `img/`.
-3. Agregar el enlace al nuevo mes en el menú de `index.html` (raíz) y actualizar la tabla de este `README.md`.
-4. Ejecutar `git add .`, `git commit -m "docs: agregar informe Septiembre 2026"` y `git push`.
+---
+*Generado el 07/09/2026*
